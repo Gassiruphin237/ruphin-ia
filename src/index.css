@@ -47,7 +47,7 @@
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
 }
-
+/* 
 :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
@@ -115,6 +115,40 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
+} */
+
+:root {
+  --bg-main: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-header: rgba(255, 255, 255, 0.6);
+  --bg-input: rgba(255, 255, 255, 0.6);
+  --border: rgba(0, 0, 0, 0.08);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --blob1: rgba(99, 102, 241, 0.15);
+  --blob2: rgba(168, 85, 247, 0.15);
+  --msg-user-bg: #6366f1;
+  --msg-user-text: #ffffff;
+  --msg-bot-bg: rgba(255, 255, 255, 0.8);
+  --msg-bot-text: #1e293b;
+  --msg-bot-border: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  --bg-main: #0f172a;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-header: rgba(255, 255, 255, 0.05);
+  --bg-input: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+  --text-primary: #f1f5f9;
+  --text-secondary: rgba(255, 255, 255, 0.4);
+  --blob1: rgba(99, 102, 241, 0.2);
+  --blob2: rgba(168, 85, 247, 0.2);
+  --msg-user-bg: rgba(99, 102, 241, 0.8);
+  --msg-user-text: #ffffff;
+  --msg-bot-bg: rgba(255, 255, 255, 0.1);
+  --msg-bot-text: rgba(255, 255, 255, 0.9);
+  --msg-bot-border: rgba(255, 255, 255, 0.1);
 }
 
 @layer base {
