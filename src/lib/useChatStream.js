@@ -12,7 +12,7 @@ export function useChatStream() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3001/api/chat", {
+      const response = await fetch("https://ruphin-ia-backend.vercel.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: updatedMessages }),
@@ -55,7 +55,7 @@ export function useChatStream() {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: "assistant",
-          content: "❌ Une erreur est survenue. Veuillez réessayer.",
+          content: " Une erreur est survenue. Veuillez réessayer.",
         };
         return updated;
       });
